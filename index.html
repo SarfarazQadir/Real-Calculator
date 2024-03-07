@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Calculator</title>
+</head>
+<body>
+    <table border="0" align="center" style="align-items: center; font-size: 20px;" >
+        <tr>
+        <td colspan="4"><input id="display" type="text" placeholder="0."></td>
+    </tr>
+        <tr>
+            <td> <input type="button" value="7" onclick="document.getElementById('display').value +='7' "></td>
+            <td> <input type="button" value="8" onclick="document.getElementById('display').value +='8' "></td>
+            <td> <input type="button" value="9" onclick="document.getElementById('display').value +='9' "></td>
+            <td> <input type="button" value="/" onclick="document.getElementById('display').value +='/' "></td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="4" onclick="document.getElementById('display').value +='4' "></td>
+            <td> <input type="button" value="5" onclick="document.getElementById('display').value +='5' "></td>
+            <td> <input type="button" value="6" onclick="document.getElementById('display').value +='6' "></td>
+            <td> <input type="button" value="*" onclick="document.getElementById('display').value +='*' "></td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="1" onclick="document.getElementById('display').value +='1' "></td>
+            <td> <input type="button" value="2" onclick="document.getElementById('display').value +='2' "></td>
+            <td> <input type="button" value="3" onclick="document.getElementById('display').value +='3' "></td>
+            <td> <input type="button" value="-" onclick="document.getElementById('display').value +='-' "></td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="0" onclick="document.getElementById('display').value +='0' "></td>
+            <td> <input type="button" value="c" onclick="document.getElementById('display').value ='' "></td>
+            <td> <input type="button" value="=" onclick="document.getElementById('display').value =eval(document.getElementById('display').value) "></td>
+            <td> <input type="button" value="+" onclick="document.getElementById('display').value +='+' "></td>
+        </tr>
+    </table>
+</body>
+</html>
